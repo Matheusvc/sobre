@@ -2,46 +2,39 @@
 
 # Matheus Lira
 
-**Automação · IA Generativa · Desenvolvimento Web**
+**Analista de Sistemas · Java · Spring Boot · SQL · PostgreSQL · Automação · n8n**
 
-Construo soluções que economizam tempo e escalam resultados —
-desde scripts de automação até interfaces web integradas com IA.
-Acadêmico de Eng. de Software e ADS.
-
+Acadêmico de Engenharia de Software e Análise e Desenvolvimento de Sistemas (ADS).
 
 </div>
 
 ---
 
-### O que eu faço
+## O que eu faço
 
-Trabalho com **automação de processos**, **integração de APIs** e **aplicações web** — Python para automações com IA, React e HTML/CSS no front. Foco em aplicar IA Generativa em problemas reais de negócios.
-
-Se você tem um processo repetitivo, uma ideia de produto ou precisa de uma solução web, estou aberto a conversar.
+Desenvolvo sistemas atuando como back-end, com **Java** e **Spring Boot**. Trabalho com APIs REST, regras de negócio e integração entre serviços. Modelo e consulto dados em **SQL** e **PostgreSQL**. Também crio automações com **n8n**, conectando APIs, webhooks e bancos de dados para eliminar processos manuais.
 
 ---
 
-### Tecnologias
+## Tecnologias
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=python,javascript,react,html,css,git&theme=dark&perline=6" />
-
-<br>
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge" alt="SQL" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+  <img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white" alt="n8n" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+</p>
 
 ---
 
-### Contato
+## Contato
 
-Disponível para projetos freelancer e colaborações. <br>
-Me chama no LinkedIn.
+Disponível para projetos freelance e colaborações.
 
-[![LinkedIn](https://img.shields.io/badge/Falar_no_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/matheusslira/)
+<p align="center">
+  <a href="https://www.linkedin.com/in/matheus-lira-a01288364">
+    <img src="https://img.shields.io/badge/Falar_no_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Falar no LinkedIn" />
+  </a>
+</p>
