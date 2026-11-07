@@ -1,0 +1,81 @@
+name: Atualizar cards do perfil
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [".github/workflows/cards.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-cards
+  cancel-in-progress: true
+
+env:
+  STYLE: hide_border=true&bg_color=00000000&title_color=5B5BFF&icon_color=5B5BFF&text_color=8B949E&locale=pt-br
+
+jobs:
+  cards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Card de estatísticas
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&include_all_commits=true&rank_icon=github&hide=stars,prs,issues&ring_color=FFD60A&${{ env.STYLE }}
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Card de linguagens
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&layout=compact&langs_count=8&${{ env.STYLE }}
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Projeto — portfolio
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=portfolio&${{ env.STYLE }}
+          path: profile/pin-portfolio.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Projeto — painel-gestao-juridica
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=painel-gestao-juridica&${{ env.STYLE }}
+          path: profile/pin-painel-gestao-juridica.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Projeto — entregavel-java
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=entregavel-java&${{ env.STYLE }}
+          path: profile/pin-entregavel-java.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Projeto — entregavel-banco
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: pin
+          options: username=${{ github.repository_owner }}&repo=entregavel-banco&${{ env.STYLE }}
+          path: profile/pin-entregavel-banco.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit dos cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "chore: atualiza cards do perfil" || exit 0
+          git push
